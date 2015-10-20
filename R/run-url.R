@@ -143,7 +143,7 @@ runGitHub <- function(repo, username = getOption("github.user"),
   }
 
   url <- paste("https://github.com/", username, "/", repo, "/archive/",
-               ref, ".tar.gz", sep = "")
+               ref, ".zip", sep = "")
 
   runUrl(url, subdir = subdir, destdir = destdir, ...)
 }
